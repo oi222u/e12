@@ -4,6 +4,7 @@ services:
   shopapp.webapi:
     ports:
       - 8001:80
+      - 8002:443
     image: ${DOCKER_REGISTRY-}shopappwebapi
     environment: 
       JWT_PRIVATE_KEY: ${ENV_JWT_PKEY}
