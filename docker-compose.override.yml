@@ -4,10 +4,8 @@ services:
   shopapp.webapi:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=https://+:443;http://+:80
-      - ASPNETCORE_HTTPS_PORT=443
+      - ASPNETCORE_URLS=http://+:80
     ports:
-      - "443"
       - "80"
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
